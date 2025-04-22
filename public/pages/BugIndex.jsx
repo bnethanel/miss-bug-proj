@@ -1,6 +1,6 @@
 const { useState, useEffect } = React
 
-import { bugService } from '../services/bug.service.local.js'
+import { bugService } from '../services/bug.service.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 
 import { BugFilter } from '../cmps/BugFilter.jsx'
@@ -14,7 +14,9 @@ export function BugIndex() {
 
     function loadBugs() {
         bugService.query(filterBy)
-            .then(setBugs)
+            .then(bugs => {
+                setBugs(bugs)
+            })
             .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
     }
 
@@ -31,7 +33,8 @@ export function BugIndex() {
     function onAddBug() {
         const bug = {
             title: prompt('Bug title?', 'Bug ' + Date.now()),
-            severity: +prompt('Bug severity?', 3)
+            severity: +prompt('Bug severity?', 3),
+            description: prompt('Bug description?')
         }
 
         bugService.save(bug)
