@@ -1,0 +1,2 @@
+22.4.2025, 18:50:49 - ERROR - Cannot save bug | ReferenceError: utilService is not defined
+22.4.2025, 18:51:35 - ERROR - Cannot save bug | ReferenceError: fs is not defined
