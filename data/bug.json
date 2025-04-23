@@ -3,36 +3,71 @@
         "title": "Infinite Loop Detected",
         "severity": 4,
         "description": "Problem when clicking Save",
+        "labels": "['noncritical', 'no-CR', 'dev-branch-admin']",
         "_id": "1NF1N1T3"
     },
     {
         "title": "Keyboard Not Found",
         "severity": 3,
         "description": "Problem with finding keyboard",
+        "labels": "['critical', 'need-CR', 'dev-branch']",
         "_id": "K3YB0RD"
     },
     {
         "_id": "C0FF33",
         "title": "404 Coffee Not Found",
         "description": "Problem with coffee",
-        "severity": "25"
-    },
-    {
-        "_id": "G0053",
-        "title": "Unexpected Response",
-        "description": "Problem with response",
-        "severity": "52"
-    },
-    {
-        "_id": "kPNHb",
-        "title": "Critical 101",
-        "description": "Critical bug 101 wow ",
-        "severity": "9"
+        "labels": "['critical', 'need-CR', 'dev-branch']",
+        "severity": 25
     },
     {
         "_id": "xxsQh",
         "title": "FATAL ERROR",
         "description": "EVERYTHING BROKEN WOW",
-        "severity": "999"
+        "labels": "['critical', 'need-CR', 'dev-branch']",
+        "severity": 999
+    },
+    {
+        "title": "good bug",
+        "description": "very-good-bug",
+        "severity": 5,
+        "_id": "NX6WX"
+    },
+    {
+        "title": "very good bug",
+        "description": "very very good bug",
+        "severity": 7,
+        "_id": "hBVsr"
+    },
+    {
+        "_id": "FL5Tc",
+        "title": "very good bug CHANGED!!!!",
+        "severity": 798
+    },
+    {
+        "title": "new",
+        "description": "very very good bug",
+        "severity": "7",
+        "_id": "iPgEi"
+    },
+    {
+        "title": "new",
+        "description": "very very good bug",
+        "severity": "73",
+        "_id": "VLYB0"
+    },
+    {
+        "title": "new",
+        "description": "very very good bug",
+        "severity": "733",
+        "_id": "nAiEk",
+        "createdAt": 1745409743429
+    },
+    {
+        "title": "new bugwow",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
+        "severity": "733",
+        "_id": "rU0M4",
+        "createdAt": 1745410105185
     }
 ]

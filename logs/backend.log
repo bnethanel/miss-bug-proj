@@ -1,2 +1,8 @@
 22.4.2025, 18:50:49 - ERROR - Cannot save bug | ReferenceError: utilService is not defined
 22.4.2025, 18:51:35 - ERROR - Cannot save bug | ReferenceError: fs is not defined
+23.4.2025, 13:58:01 - ERROR - Cannot remove bug | Cannot remove bug - kPNHb
+23.4.2025, 14:59:47 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:01:22 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:02:18 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:08:09 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:10:16 - INFO - Server ready at http://127.0.0.1:3030

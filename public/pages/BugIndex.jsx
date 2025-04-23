@@ -5,19 +5,22 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
+import { BugSort } from '../cmps/BugSort.jsx'
 
 export function BugIndex() {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
+    const [sortBy, setSortBy] = useState(bugService.getDefaultSortBy())
 
-    useEffect(loadBugs, [filterBy])
+    useEffect(() => {
+        loadBugs()
+    }, [filterBy, sortBy])
 
     function loadBugs() {
-        bugService.query(filterBy)
+        bugService.query(filterBy, sortBy)
             .then(bugs => {
                 setBugs(bugs)
             })
-            .catch(err => showErrorMsg(`Couldn't load bugs - ${err}`))
     }
 
     function onRemoveBug(bugId) {
@@ -34,7 +37,6 @@ export function BugIndex() {
         const bug = {
             title: prompt('Bug title?', 'Bug ' + Date.now()),
             severity: +prompt('Bug severity?', 3),
-            description: prompt('Bug description?')
         }
 
         bugService.save(bug)
@@ -43,6 +45,10 @@ export function BugIndex() {
                 showSuccessMsg('Bug added')
             })
             .catch(err => showErrorMsg(`Cannot add bug`, err))
+    }
+
+    function onSetSort(sortBy) {
+        setSortBy(prevSort => ({ ...prevSort, ...sortBy }))
     }
 
     function onEditBug(bug) {
@@ -67,6 +73,7 @@ export function BugIndex() {
     return <section className="bug-index main-content">
 
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
+        <BugSort onSetSort={onSetSort} sortBy={sortBy} />
         <header>
             <h3>Bug List</h3>
             <button onClick={onAddBug}>Add Bug</button>

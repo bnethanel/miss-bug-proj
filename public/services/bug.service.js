@@ -11,7 +11,8 @@ export const bugService = {
     getById,
     save,
     remove,
-    getDefaultFilter
+    getDefaultFilter,
+    getDefaultSortBy
 }
 
 function query(filterBy = {}) {
@@ -33,35 +34,39 @@ function save(bug) {
     return axios.get(BASE_URL + 'save', { params: bug }).then(res => res.data)
 }
 
-function _createBugs() {
-    let bugs = utilService.loadFromStorage(STORAGE_KEY)
-    if (bugs && bugs.length > 0) return
+// function _createBugs() {
+//     let bugs = utilService.loadFromStorage(STORAGE_KEY)
+//     if (bugs && bugs.length > 0) return
 
-    bugs = [
-        {
-            title: "Infinite Loop Detected",
-            severity: 4,
-            _id: "1NF1N1T3"
-        },
-        {
-            title: "Keyboard Not Found",
-            severity: 3,
-            _id: "K3YB0RD"
-        },
-        {
-            title: "404 Coffee Not Found",
-            severity: 2,
-            _id: "C0FF33"
-        },
-        {
-            title: "Unexpected Response",
-            severity: 1,
-            _id: "G0053"
-        }
-    ]
-    utilService.saveToStorage(STORAGE_KEY, bugs)
-}
+//     bugs = [
+//         {
+//             title: "Infinite Loop Detected",
+//             severity: 4,
+//             _id: "1NF1N1T3"
+//         },
+//         {
+//             title: "Keyboard Not Found",
+//             severity: 3,
+//             _id: "K3YB0RD"
+//         },
+//         {
+//             title: "404 Coffee Not Found",
+//             severity: 2,
+//             _id: "C0FF33"
+//         },
+//         {
+//             title: "Unexpected Response",
+//             severity: 1,
+//             _id: "G0053"
+//         }
+//     ]
+//     utilService.saveToStorage(STORAGE_KEY, bugs)
+// }
 
 function getDefaultFilter() {
     return { txt: '', minSeverity: 0 }
+}
+
+function getDefaultSortBy() {
+    return { type: '', desc: 1 }
 }
