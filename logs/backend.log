@@ -6,3 +6,50 @@
 23.4.2025, 15:02:18 - INFO - Server ready at http://127.0.0.1:3030
 23.4.2025, 15:08:09 - INFO - Server ready at http://127.0.0.1:3030
 23.4.2025, 15:10:16 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:16:03 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:21:54 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:24:24 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:26:24 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:29:35 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:29:55 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:30:53 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:31:08 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:34:42 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:35:16 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:43:35 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:48:59 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 15:49:57 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:00:17 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:01:25 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:07:52 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:08:28 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:08:42 - INFO - req.body: | {"_id":"K3YB0RD","title":"very good bug CHANGED!!!!","severity":798}
+23.4.2025, 16:08:42 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"very good bug CHANGED!!!!","severity":798}
+23.4.2025, 16:09:02 - INFO - req.body: | {"title":"very adsfdsaf CHANsad!","severity":7298}
+23.4.2025, 16:09:02 - INFO - bugToSave: | {"title":"very adsfdsaf CHANsad!","severity":7298}
+23.4.2025, 16:09:33 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:09:48 - INFO - req.body: | {"_id":"K3YB0RD","title":"a","severity":9}
+23.4.2025, 16:09:48 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"a","severity":9}
+23.4.2025, 16:10:03 - INFO - req.body: | {"_id":"K3YB0RD","title":"asa","severity":9}
+23.4.2025, 16:10:03 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"asa","severity":9}
+23.4.2025, 16:17:27 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:17:59 - INFO - req.body: | {"_id":"K3YB0RD","title":"asaשsdas","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:17:59 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"asaשsdas","severity":9}
+23.4.2025, 16:19:06 - INFO - req.body: | {"_id":"K3YB0RD","title":"can't find keyboard","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:19:06 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"can't find keyboard","severity":9}
+23.4.2025, 16:20:30 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:21:11 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:21:21 - INFO - req.body: | {"_id":"K3YB0RD","title":"can't find keyboard","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:21:21 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"can't find keyboard","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:21:33 - INFO - req.body: | {"_id":"K3YB0RD","title":"can't find keyboard","severity":9}
+23.4.2025, 16:21:33 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"can't find keyboard","severity":9}
+23.4.2025, 16:21:38 - INFO - req.body: | {"_id":"K3YB0RD","title":"can't find keyboard","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:21:38 - INFO - bugToSave: | {"_id":"K3YB0RD","title":"can't find keyboard","labels":"['noncritical', 'no-CR', 'dev-branch-admin']","severity":9}
+23.4.2025, 16:28:24 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:29:03 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:30:56 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:31:39 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:40:34 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:41:14 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:41:49 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:41:53 - INFO - Server ready at http://127.0.0.1:3030

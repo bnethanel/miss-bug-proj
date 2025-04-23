@@ -19,12 +19,14 @@ app.listen(port, () => loggerService.info(`Server ready at http://127.0.0.1:${po
 
 
 app.get('/api/bug', (req, res) => {
-    makePdfService.makeBugPdf()
+    // makePdfService.makeBugPdf()
     const filterBy = {
         txt: req.query.txt || '',
-        minSeverity: +req.query.minSeverity,
+        minSeverity: +req.query.minSeverity || 0,
+        pageIdx: req.query.pageIdx,
+        sortBy: req.query.sortBy ? JSON.parse(req.query.sortBy) : {}
     }
-
+    console.log(filterBy)
     bugService.query(filterBy)
         .then(bugs => res.send(bugs))
         .catch(err => {
@@ -57,6 +59,7 @@ app.post('/api/bug', (req, res) => {
     const bugToSave = {
         title: req.body.title,
         description: req.body.description,
+        labels: req.body.labels,
         severity: req.body.severity
     }
 
@@ -77,6 +80,7 @@ app.put('/api/bug/:bugId', (req, res) => {
         _id: req.body._id,
         title: req.body.title,
         description: req.body.description,
+        labels: req.body.labels,
         severity: req.body.severity
     }
     loggerService.info('bugToSave:', bugToSave)

@@ -2,6 +2,7 @@ import fs from 'fs'
 import { utilService } from './util.service.js'
 
 const bugs = utilService.readJsonFile('data/bug.json')
+const PAGE_SIZE = 3
 
 export const bugService = {
     query,
@@ -10,7 +11,7 @@ export const bugService = {
     save
 }
 
-function query(filterBy = {}) {
+function query(filterBy = { txt: '', minSeverity: 0, sortBy: {} }) {
 
     let bugToDisplay = bugs
     if (filterBy.txt) {
@@ -20,15 +21,22 @@ function query(filterBy = {}) {
     if (filterBy.minSeverity) {
         bugToDisplay = bugToDisplay.filter(bug => bug.severity >= filterBy.minSeverity)
     }
-
-    const sortBy = filterBy.sortBy
-    if (sortBy.type === 'createdAt') {
-        bugToDisplay.sort((b1, b2) => (sortBy.desc) * (b1.createdAt - b2.createdAt))
-    } else if (sortBy.type === 'title') {
-        bugToDisplay.sort((b1, b2) => (sortBy.desc) * (b1.title.localeCompare(b2.title)))
-    } else if (sortBy.type === 'severity') {
-        bugToDisplay.sort((b1, b2) => (sortBy.desc) * (b1.severity.localeCompare(b2.severity)))
+    if (filterBy.pageIdx !== undefined) {
+        const startIdx = filterBy.pageIdx * PAGE_SIZE // 0,3,6,9
+        bugToDisplay = bugToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
     }
+
+    const sortBy = filterBy.sortBy.type
+    const sortDir = +filterBy.sortBy.desc
+
+    if (sortBy === 'createdAt') {
+        bugToDisplay.sort((a, b) => (a.createdAt - b.createdAt) * sortDir)
+    } else if (sortBy === 'title') {
+        bugToDisplay.sort((a, b) => a.title.localeCompare(b.title) * sortDir)
+    } else if (sortBy === 'severity') {
+        bugToDisplay.sort((a, b) => (a.severity - b.severity) * sortDir)
+    }
+    console.log('sortBy:', sortBy, '| sortDir:', sortDir)
 
 
     return Promise.resolve(bugToDisplay)
@@ -55,6 +63,7 @@ function save(bugToSave) {
         bugToSave._id = utilService.makeId()
         bugToSave.createdAt = Date.now()
         bugToSave.description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.'
+        bugToSave.labels = ['noncritical', 'no-CR', 'dev-branch-admin']
         bugs.push(bugToSave)
     }
 
