@@ -1,0 +1,57 @@
+[
+    {
+        "_id": "u10000",
+        "username": "admin",
+        "fullname": "Admin Adminov",
+        "password": "admin",
+        "score": 100,
+        "isAdmin": true
+    },
+    {
+        "_id": "u102",
+        "username": "nina",
+        "fullname": "Nina Simantov",
+        "password": "nina",
+        "score": 100
+    },
+    {
+        "username": "popo",
+        "password": "popo",
+        "fullname": "Popo McPopo",
+        "score": 100,
+        "_id": "tl3ps"
+    },
+    {
+        "username": "kiki",
+        "password": "kiki",
+        "fullname": "Kiki Ki",
+        "score": 100,
+        "_id": "6iykr"
+    },
+    {
+        "username": "bob",
+        "password": "bob",
+        "fullname": "Bobby Bob",
+        "score": 100,
+        "_id": "GOtHH"
+    },
+    {
+        "_id": "u111",
+        "username": "puki",
+        "fullname": "Puki Ja",
+        "password": "puki",
+        "score": 100
+    },
+    {
+        "username": "nate",
+        "password": "1234",
+        "fullname": "nate",
+        "_id": "osUkH"
+    },
+    {
+        "username": "nati",
+        "password": "1234",
+        "fullname": "nethanel",
+        "_id": "6huLL"
+    }
+]

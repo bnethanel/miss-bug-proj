@@ -53,3 +53,121 @@
 23.4.2025, 16:41:14 - INFO - Server ready at http://127.0.0.1:3030
 23.4.2025, 16:41:49 - INFO - Server ready at http://127.0.0.1:3030
 23.4.2025, 16:41:53 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:47:52 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:49:05 - INFO - req.body: | {"title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":9,"_id":"Gn4d7","createdAt":1745416126626}
+23.4.2025, 16:49:05 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":9}
+23.4.2025, 16:51:56 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:52:01 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":8}
+23.4.2025, 16:52:01 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":8}
+23.4.2025, 16:52:09 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:52:15 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":4}
+23.4.2025, 16:52:15 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":4}
+23.4.2025, 16:53:21 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:53:28 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":9}
+23.4.2025, 16:53:42 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 16:53:46 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":43}
+23.4.2025, 16:53:46 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":43}
+23.4.2025, 17:05:23 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":9}
+23.4.2025, 17:05:23 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":9}
+23.4.2025, 17:08:17 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:08:26 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"createdAt":1745415960572,"severity":8}
+23.4.2025, 17:08:26 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"createdAt":1745415960572,"severity":8}
+23.4.2025, 17:09:19 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:09:25 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"createdAt":1745415960572,"severity":5}
+23.4.2025, 17:09:25 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":5}
+23.4.2025, 17:09:29 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:09:33 - INFO - req.body: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":54}
+23.4.2025, 17:09:33 - INFO - bugToSave: | {"_id":"Gn4d7","title":"Fresh API TEST BUG","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":54}
+23.4.2025, 17:10:10 - INFO - req.body: | {"title":"Api Test Bug","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"severity":999555,"_id":"LDF2n","createdAt":1745417399901}
+23.4.2025, 17:10:10 - INFO - bugToSave: | {"_id":"LDF2n","title":"Api Test Bug","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.","labels":["noncritical","no-CR","dev-branch-admin"],"createdAt":1745417399901,"severity":999555}
+23.4.2025, 17:20:57 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:21:07 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:22:34 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:22:54 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:24:01 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:24:19 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:24:51 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:36:00 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:37:33 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:40:55 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:42:05 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:50:44 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:52:18 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 17:53:21 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:11:43 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:13:27 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:18:26 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:21:49 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:23:19 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:24:10 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:24:26 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:27:45 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:30:22 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:30:36 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:30:39 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:31:02 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:33:29 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:34:19 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:34:38 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:34:56 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:35:08 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:35:55 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:39:33 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:44:37 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:46:10 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:47:11 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:48:00 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:48:04 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:48:41 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:56:14 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:56:41 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:56:55 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 18:58:39 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 19:02:28 - INFO - Server ready at http://127.0.0.1:3030
+23.4.2025, 21:03:41 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 15:53:16 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:19:50 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:20:13 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:22:04 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:22:07 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:22:13 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:23:30 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:24:30 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:24:32 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:24:49 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:25:20 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 16:29:18 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:25:43 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:26:15 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:26:29 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:28:43 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:28:50 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:29:08 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:35:05 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:35:15 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:44:15 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:51:03 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:51:19 - ERROR - Cannot remove bug | Cannot remove bug - 8pHV8
+24.4.2025, 17:53:31 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:53:37 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:54:11 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:54:16 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:56:18 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:57:21 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 17:57:24 - ERROR - Cannot remove bug | Not your bug
+24.4.2025, 18:02:14 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:04:19 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:05:30 - ERROR - Cannot remove bug | Cannot remove bug - pBOWP
+24.4.2025, 18:18:08 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:18:13 - ERROR - Cannot remove bug | Cannot remove bug - pBOWP
+24.4.2025, 18:19:12 - ERROR - Cannot remove bug | Not your bug
+24.4.2025, 18:38:25 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:38:49 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:44:06 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:44:08 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:44:54 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 18:53:37 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 19:13:20 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 19:14:33 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 19:14:54 - INFO - Server ready at http://127.0.0.1:3030
+24.4.2025, 19:15:04 - INFO - Server ready at http://127.0.0.1:3030

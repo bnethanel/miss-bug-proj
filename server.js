@@ -3,6 +3,8 @@ import cookieParser from 'cookie-parser'
 import { bugService } from './services/bug.service.js'
 import { loggerService } from './services/logger.service.js'
 import { makePdfService } from './services/makePdf.service.js'
+import { userService } from './services/user.service.js'
+import { authService } from './services/auth.service.js'
 
 
 
@@ -24,6 +26,7 @@ app.get('/api/bug', (req, res) => {
         txt: req.query.txt || '',
         minSeverity: +req.query.minSeverity || 0,
         pageIdx: req.query.pageIdx,
+        label: req.query.label || '',
         sortBy: req.query.sortBy ? JSON.parse(req.query.sortBy) : {}
     }
     console.log(filterBy)
@@ -35,27 +38,10 @@ app.get('/api/bug', (req, res) => {
         })
 })
 
-
-// app.get('/api/bug/save', (req, res) => {
-//     const bugToSave = {
-//         _id: req.query._id,
-//         title: req.query.title,
-//         description: req.query.description,
-//         severity: req.query.severity
-
-//     }
-//     bugService.save(bugToSave)
-//         .then(savedBug => {
-//             makePdfService.makeBugPdf()
-//             res.send(savedBug)
-//         })
-//         .catch(err => {
-//             loggerService.error('Cannot save bug', err)
-//             res.status(400).send('Cannot save bug')
-//         })
-// })
-
 app.post('/api/bug', (req, res) => {
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send(`Can't add bug`)
+
     const bugToSave = {
         title: req.body.title,
         description: req.body.description,
@@ -63,7 +49,7 @@ app.post('/api/bug', (req, res) => {
         severity: req.body.severity
     }
 
-    bugService.save(bugToSave)
+    bugService.save(bugToSave, loggedinUser)
         .then(savedBug => res.send(savedBug))
         .catch(err => {
             loggerService.error('Cannot save bug', err)
@@ -73,7 +59,9 @@ app.post('/api/bug', (req, res) => {
 
 //* Edit
 app.put('/api/bug/:bugId', (req, res) => {
-    // const { carId } = req.params
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send(`Can't add bug`)
+
     loggerService.info('req.body:', req.body)
 
     const bugToSave = {
@@ -81,18 +69,19 @@ app.put('/api/bug/:bugId', (req, res) => {
         title: req.body.title,
         description: req.body.description,
         labels: req.body.labels,
-        severity: req.body.severity
+        createdAt: req.body.createdAt,
+        severity: req.body.severity,
+        owner: req.body.owner
     }
-    loggerService.info('bugToSave:', bugToSave)
-    bugService.save(bugToSave)
+    // console.log('createdAt', bugToSave)
+    // loggerService.info('bugToSave:', bugToSave)
+    bugService.save(bugToSave, loggedinUser)
         .then(savedBug => res.send(savedBug))
         .catch(err => {
             loggerService.error('Cannot save bug', err)
             res.status(400).send('Cannot save bug')
         })
 })
-
-
 
 app.get('/api/bug/:bugId', (req, res) => {
     const { bugId } = req.params
@@ -118,26 +107,78 @@ app.get('/api/bug/:bugId', (req, res) => {
         })
 })
 
-
 app.delete('/api/bug/:bugId', (req, res) => {
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send(`Can't remove bug`)
+    console.log(loggedinUser)
+
     const { bugId } = req.params
-    bugService.remove(bugId)
+    bugService.remove(bugId, loggedinUser)
         .then(() => {
             makePdfService.makeBugPdf()
             res.send(`Bug removed - ${bugId}`)
         })
         .catch(err => {
+            console.log(err)
             loggerService.error('Cannot remove bug', err)
             res.status(400).send('Cannot remove bug')
         })
 })
 
-//  app.get('/cookies', (req, res) => {
-//     let visitedBugs = req.cookies.visitedBugs || 0
-//     visitedBugs++
-//     // console.log('visitedCount:', visitedCount)
-//     res.cookie('visitedCount', visitedCount, { maxAge: 20 * 1000 })
-//     console.log('visitedCount:', visitedCount)
-//     // res.send(`Hello Puki - ${visitedCount}`)
-// })
+////////////////////// Copy from inClass
+
+app.get('/api/user', (req, res) => {
+    userService.query()
+        .then(users => res.send(users))
+        .catch(err => {
+            loggerService.error('Cannot load users', err)
+            res.status(400).send('Cannot load users')
+        })
+})
+
+app.get('/api/user/:userId', (req, res) => {
+    const { userId } = req.params
+
+    userService.getById(userId)
+        .then(user => res.send(user))
+        .catch(err => {
+            loggerService.error('Cannot load user', err)
+            res.status(400).send('Cannot load user')
+        })
+})
+
+//* Auth API
+app.post('/api/auth/login', (req, res) => {
+    const { username, password } = req.body
+    authService.checkLogin({ username, password })
+        .then(user => {
+            const loginToken = authService.getLoginToken(user)
+            res.cookie('loginToken', loginToken)
+            res.send(user)
+        })
+        .catch(() => res.status(404).send('Invalid Credentials'))
+})
+
+app.post('/api/auth/signup', (req, res) => {
+    const { username, password, fullname } = req.body
+    userService.add({ username, password, fullname })
+        .then(user => {
+            if (user) {
+                const loginToken = authService.getLoginToken(user)
+                res.cookie('loginToken', loginToken)
+                res.send(user)
+            } else {
+                res.status(400).send('Cannot signup')
+            }
+        })
+        .catch(err => {
+            console.log('err:', err)
+            res.status(400).send('Username taken.')
+        })
+})
+
+app.post('/api/auth/logout', (req, res) => {
+    res.clearCookie('loginToken')
+    res.send('logged-out!')
+})
 

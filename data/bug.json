@@ -1,91 +1,115 @@
 [
     {
-        "title": "Infinite Loop Detected",
-        "severity": 4,
-        "description": "Problem when clicking Save",
-        "labels": "['noncritical', 'no-CR', 'dev-branch-admin']",
-        "_id": "1NF1N1T3"
-    },
-    {
-        "_id": "K3YB0RD",
-        "title": "can't find keyboard",
-        "labels": "['noncritical', 'no-CR', 'dev-branch-admin']",
-        "severity": 9
-    },
-    {
-        "_id": "C0FF33",
-        "title": "404 Coffee Not Found",
-        "description": "Problem with coffee",
-        "labels": "['critical', 'need-CR', 'dev-branch']",
-        "severity": 25
-    },
-    {
-        "_id": "xxsQh",
-        "title": "FATAL ERROR",
-        "description": "EVERYTHING BROKEN WOW",
-        "labels": "['critical', 'need-CR', 'dev-branch']",
-        "severity": 999
-    },
-    {
-        "title": "good bug",
-        "description": "very-good-bug",
-        "severity": 5,
-        "_id": "NX6WX"
-    },
-    {
-        "title": "very good bug",
-        "description": "very very good bug",
-        "severity": 7,
-        "_id": "hBVsr"
-    },
-    {
-        "_id": "FL5Tc",
-        "title": "very good bug CHANGED!!!!",
-        "severity": 798
-    },
-    {
-        "title": "new",
-        "description": "very very good bug",
-        "severity": 7,
-        "_id": "iPgEi"
-    },
-    {
-        "title": "new",
-        "description": "very very good bug",
-        "severity": 73,
-        "_id": "VLYB0"
-    },
-    {
-        "title": "new",
-        "description": "very very good bug",
-        "severity": 733,
-        "_id": "nAiEk",
-        "createdAt": 1745409743429
-    },
-    {
-        "title": "new bugwow",
+        "title": "Bug 3",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
-        "severity": 733,
-        "_id": "rU0M4",
-        "createdAt": 1745410105185
+        "labels": [
+            "dev-branch-admin"
+        ],
+        "severity": 2,
+        "_id": "VOB7i",
+        "createdAt": 1745419218428,
+        "owner": {
+            "_id": "u103",
+            "fullname": "Lala Na"
+        }
     },
     {
-        "_id": "VxKSD",
-        "title": "very adsfdsaf CHANsad!",
+        "title": "bug 4",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
-        "severity": 7298,
-        "createdAt": 1745413742728
+        "labels": [
+            "no-CR",
+            "dev-branch-admin"
+        ],
+        "severity": 6,
+        "_id": "xMDV3",
+        "createdAt": 1745419224198,
+        "owner": {
+            "_id": "u104",
+            "fullname": "Zaza Ja"
+        }
     },
     {
-        "title": "n123",
+        "title": "New-UserBug!",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
-        "severity": "733",
-        "_id": "ZHQjf",
-        "createdAt": 1745414527230,
         "labels": [
             "noncritical",
             "no-CR",
             "dev-branch-admin"
-        ]
+        ],
+        "severity": "733",
+        "_id": "93nVK",
+        "createdAt": 1745507086330,
+        "owner": {
+            "username": "nati",
+            "fullname": "nethanel",
+            "_id": "6huLL"
+        }
+    },
+    {
+        "title": "TEST BUG",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
+        "labels": [
+            "noncritical",
+            "no-CR",
+            "dev-branch-admin"
+        ],
+        "severity": "733",
+        "_id": "MuaEW",
+        "createdAt": 1745509705255,
+        "owner": {
+            "username": "nati",
+            "fullname": "nethanel",
+            "_id": "6huLL"
+        }
+    },
+    {
+        "title": "TEST BUG123",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
+        "labels": [
+            "noncritical",
+            "no-CR",
+            "dev-branch-admin"
+        ],
+        "severity": "733",
+        "_id": "M17Ek",
+        "createdAt": 1745511067480,
+        "owner": {
+            "username": "nati",
+            "fullname": "nethanel",
+            "_id": "6huLL"
+        }
+    },
+    {
+        "title": "TEST BUG1233",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
+        "labels": [
+            "noncritical",
+            "no-CR",
+            "dev-branch-admin"
+        ],
+        "severity": "733",
+        "_id": "XjZvO",
+        "createdAt": 1745511207564,
+        "owner": {
+            "username": "nati",
+            "fullname": "nethanel",
+            "_id": "6huLL"
+        }
+    },
+    {
+        "title": "TEST BUG13233",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
+        "labels": [
+            "noncritical",
+            "no-CR",
+            "dev-branch-admin"
+        ],
+        "severity": "733",
+        "_id": "BEsnH",
+        "createdAt": 1745511312436,
+        "owner": {
+            "fullname": "nethanel",
+            "_id": "6huLL"
+        }
     }
 ]
