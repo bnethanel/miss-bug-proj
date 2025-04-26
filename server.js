@@ -1,4 +1,5 @@
 import express from 'express'
+import path from 'path'
 import cookieParser from 'cookie-parser'
 import { bugService } from './services/bug.service.js'
 import { loggerService } from './services/logger.service.js'
@@ -182,3 +183,7 @@ app.post('/api/auth/logout', (req, res) => {
     res.send('logged-out!')
 })
 
+// Fallback route
+app.get('/*all', (req, res) => {
+    res.sendFile(path.resolve('public/index.html'))
+})

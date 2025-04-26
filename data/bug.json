@@ -29,40 +29,6 @@
         }
     },
     {
-        "title": "New-UserBug!",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
-        "labels": [
-            "noncritical",
-            "no-CR",
-            "dev-branch-admin"
-        ],
-        "severity": "733",
-        "_id": "93nVK",
-        "createdAt": 1745507086330,
-        "owner": {
-            "username": "nati",
-            "fullname": "nethanel",
-            "_id": "6huLL"
-        }
-    },
-    {
-        "title": "TEST BUG",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
-        "labels": [
-            "noncritical",
-            "no-CR",
-            "dev-branch-admin"
-        ],
-        "severity": "733",
-        "_id": "MuaEW",
-        "createdAt": 1745509705255,
-        "owner": {
-            "username": "nati",
-            "fullname": "nethanel",
-            "_id": "6huLL"
-        }
-    },
-    {
         "title": "TEST BUG123",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
         "labels": [
@@ -97,16 +63,16 @@
         }
     },
     {
-        "title": "TEST BUG13233",
+        "title": "NATI BUG!!",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum sed corrupti voluptatum voluptatem at.",
         "labels": [
             "noncritical",
             "no-CR",
             "dev-branch-admin"
         ],
-        "severity": "733",
-        "_id": "BEsnH",
-        "createdAt": 1745511312436,
+        "severity": 39999,
+        "_id": "UjLKe",
+        "createdAt": 1745695440659,
         "owner": {
             "fullname": "nethanel",
             "_id": "6huLL"
